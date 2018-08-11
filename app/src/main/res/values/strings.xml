@@ -1,0 +1,34 @@
+<resources>
+  <string name="app_name">CINEمA BأوX</string>
+  <string name="top_rated">Top Rated</string>
+  <string name="popular">Popular</string>
+  <string name="upcoming">Upcoming</string>
+  <string name="latest">Latest</string>
+  <string name="now_playing">Now Playing</string>
+  <string name="favorite">Favorite</string>
+  <string name="companies">PRODUCTION COMPANIES</string>
+  <string name="more_info">MORE INFO</string>
+  <string name="view">View</string>
+  <string name="budget">   Budget   </string>
+  <string name="hollywood">Superstars</string>
+  <string name="revenue">   Revenue   </string>
+  <string name="noconnection">OPEN ANY NETWORK CONNECTION !</string>
+  <string name="favorite_count">There are %s in your offline database</string>
+  <string name="delete_msg">Are you sure to delete :</string>
+  <string name="delete_move">Delete movie from favorites</string>
+  <string name="yes">Yes</string>
+  <string name="no">Cancel</string>
+  <string name="no_data">There is no favorite movies at this moment</string>
+  <string name="added_success">Added to favorites successfully !</string>
+  <string name="details">DETAILS</string>
+  <string name="cast">CAST</string>
+  <string name="trailers">TRAILERS</string>
+  <string name="reviews">REVIEWS</string>
+  <string name="recommend">RECOMMENDATIONS</string>
+  <string name="similars">SIMILAR</string>
+  <string name="retry">Retry</string>
+  <string name="no_review">Seems like this movie has no reviews !</string>
+
+  <string name="exit">Exit Application</string>
+  <string name="exit_msg">Are you sure you want to exit</string>
+</resources>

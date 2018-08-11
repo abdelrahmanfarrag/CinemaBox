@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">CINEمA BأوX</string>
+  <string name="top_rated">الأعلى تقييماً</string>
+  <string name="popular">الأفلام المشهورة</string>
+  <string name="upcoming">الأفلام القادمة</string>
+  <string name="now_playing">أفلام تُعرض حاليا</string>
+  <string name="favorite">الأفلام المٌفضلة</string>
+  <string name="view">عرض</string>
+  <string name="budget">الميزانية</string>
+  <string name="hollywood">نجوم هوليوود</string>
+  <string name="companies">شركات الانتاج</string>
+  <string name="more_info">معلومات اضافية</string>
+  <string name="delete_msg">هل انت متاكد من حذف :</string>
+  <string name="revenue">الأرباح</string>
+  <string name="noconnection">شوفلك يبني اي واي فاي ولا داتا عشان تتنيل تكمل فرجة !</string>
+  <string name="favorite_count">يوجد لديك %s فيلم مخزنة في المفضلة لديكe</string>
+  <string name="delete_move">حذف فيلم من الافلام المفضلة</string>
+  <string name="yes">نعم</string>
+  <string name="no">إلغاء</string>
+  <string name="no_data">لا يوجد لديك افلام مفضلة حتى الان</string>
+
+  <string name="added_success">تم إضافة الفيلم الى الافلام المفضلة بنجاح</string>
+  <string name="details">البيانات</string>
+  <string name="cast">فريق المُمثلين</string>
+  <string name="trailers">المشاهد الترويجية</string>
+  <string name="reviews">أراء النقاد</string>
+  <string name="recommend">الأفلام الموصى بها</string>
+  <string name="similars">أفلام مُشابهه</string>
+  <string name="exit">إغلاق التطبيق</string>
+  <string name="no_review">يبدو ان هذا الفيلم لا يوجد له اي اراء نقدية !</string>
+
+  <string name="retry">أعد المحاولة</string>
+  <string name="exit_msg">هل انت متاكد من إغلاق تطبيق </string>
+
+
+</resources>
