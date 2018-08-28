@@ -102,33 +102,34 @@ import java.util.List;
   }
 
   private void saveDatatoBundle(Bundle outState) {
-    outState.putParcelableArrayList(Constants.UPCOMING_LIST,
+    b = outState;
+    b.putParcelableArrayList(Constants.UPCOMING_LIST,
         (ArrayList<? extends Parcelable>) upcomingMovies);
-    outState.putParcelableArrayList(Constants.MOVIES_LIST,
+    b.putParcelableArrayList(Constants.MOVIES_LIST,
         (ArrayList<? extends Parcelable>) playingMovies);
-    outState.putParcelableArrayList(Constants.POPULAR_LIST,
+    b.putParcelableArrayList(Constants.POPULAR_LIST,
         (ArrayList<? extends Parcelable>) popularMovies);
-    outState.putParcelableArrayList(Constants.RATED_LIST,
+    b.putParcelableArrayList(Constants.RATED_LIST,
         (ArrayList<? extends Parcelable>) ratedMovies);
-    outState.putParcelableArrayList(Constants.FAVORITE_LIST,
+    b.putParcelableArrayList(Constants.FAVORITE_LIST,
         (ArrayList<? extends Parcelable>) favoriteMovies);
-    outState.putParcelableArrayList(Constants.HOLLYWOOD_LIST,
+    b.putParcelableArrayList(Constants.HOLLYWOOD_LIST,
         (ArrayList<? extends Parcelable>) hollywoodStarsMovies);
-    outState.putInt(Constants.UPCOMING_PAGE, upcomingCurrent);
-    outState.putInt(Constants.UPCOMING_TOTAL, upcomingTotal);
-    outState.putInt(Constants.UPCOMING_TOTAL_MOVIES, upcomingCount);
-    outState.putInt(Constants.PLAYING_PAGE, playingCurrent);
-    outState.putInt(Constants.PLAYING_TOTAL, playingTotal);
-    outState.putInt(Constants.PLAYING_TOTAL_MOVIES, playingCount);
-    outState.putInt(Constants.POPULAR_PAGE, popularCurrent);
-    outState.putInt(Constants.POPULAR_TOTAL, popularTotal);
-    outState.putInt(Constants.POPULAR_TOTAL_MOVIES, popularCount);
-    outState.putInt(Constants.RATED_PAGE, ratedCurrent);
-    outState.putInt(Constants.RATED_TOTAAL, ratedTotal);
-    outState.putInt(Constants.RATED_TOTAL_MOVIES, ratedCount);
-    outState.putInt(Constants.HOLLYWOOD_CURRENT, hollywoodCurrent);
-    outState.putInt(Constants.HOLLYWOOD_TOTAL, hollywoodTotal);
-    outState.putInt(Constants.HOLLYWOOD_TOTAL_MOVIES, hollywoodCount);
+    b.putInt(Constants.UPCOMING_PAGE, upcomingCurrent);
+    b.putInt(Constants.UPCOMING_TOTAL, upcomingTotal);
+    b.putInt(Constants.UPCOMING_TOTAL_MOVIES, upcomingCount);
+    b.putInt(Constants.PLAYING_PAGE, playingCurrent);
+    b.putInt(Constants.PLAYING_TOTAL, playingTotal);
+    b.putInt(Constants.PLAYING_TOTAL_MOVIES, playingCount);
+    b.putInt(Constants.POPULAR_PAGE, popularCurrent);
+    b.putInt(Constants.POPULAR_TOTAL, popularTotal);
+    b.putInt(Constants.POPULAR_TOTAL_MOVIES, popularCount);
+    b.putInt(Constants.RATED_PAGE, ratedCurrent);
+    b.putInt(Constants.RATED_TOTAAL, ratedTotal);
+    b.putInt(Constants.RATED_TOTAL_MOVIES, ratedCount);
+    b.putInt(Constants.HOLLYWOOD_CURRENT, hollywoodCurrent);
+    b.putInt(Constants.HOLLYWOOD_TOTAL, hollywoodTotal);
+    b.putInt(Constants.HOLLYWOOD_TOTAL_MOVIES, hollywoodCount);
   }
 
   @Override protected void onResume() {
@@ -157,12 +158,10 @@ import java.util.List;
 
   @Override protected void onStop() {
     super.onStop();
+
     if (b != null) {
       // WHEN SCREEN ROTATE APP GET DATA FROM BUNDLE !
       handleConfigurationChangesData();
-    } else {
-
-      saveDatatoBundle(b);
     }
   }
 
